@@ -7,6 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Box personal portfolio Template</title>
+    <style>
+		#playlist{
+			list-style: none;
+		}
+		#playlist li a{
+			text-decoration: none;
+			color: black;
+		}
+		#playlist .current-song a{
+			color:#111C94;
+			text-decoration: underline;
+		}
+	
+	</style>
     <link rel="icon" href="img/fav.png" type="image/x-icon">
 
     <!-- Bootstrap -->
@@ -90,16 +104,23 @@
            <h5>You can play the tunes here without ads :)</h5>
            <div class="h-30"></div>
            
-           	<p>Tainted Love - Soft Cell</p>
-           	 <div id="player">
-           	 	<audio controls>
-           	 		<p>
-            			<source src="music/Tainted_Love_Soft_Cell_Lyrics[Mp3Converter.net].mp3" type="audio/mpeg">
-            			Unsupported Browser!
-					</p>
-            	</audio>
-           	 </div>
-           	 
+           	<audio src="" controls id="audioPlayer">
+           		Sorry, you gotta use a different browser pal
+           	</audio>
+           	<ul id="playlist">
+           		<li><a href="music/Tainted_Love_Soft_Cell_Lyrics[Mp3Converter.net].mp3">Soft Cell - Tainted Love</a></li>
+           		<li><a href=""></a></li>
+           		<li><a href=""></a></li>
+           		
+           	</ul>
+           	<script src="https://code.jquery.com/jquery-2.2.0.js">
+			</script>
+          	
+          	<script src="js/audioPlayer.js"></script>
+           	
+           	<script> 
+				audioPlayer();
+			</script>
            	 
             <div class="h-10"></div>
             
